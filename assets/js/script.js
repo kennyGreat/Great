@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
-    
+
     // Navbar Scroll Effect
     const navbar = document.querySelector('.navbar');
     if (navbar) {
@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     }
-    
+
     // Mobile Menu Toggle
     const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
     const navLinks = document.querySelector('.nav-links');
@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 icon.classList.toggle('fa-times');
             }
         });
-        
+
         navLinks.querySelectorAll('a').forEach(link => {
             link.addEventListener('click', () => {
                 navLinks.classList.remove('active');
@@ -36,7 +36,7 @@ document.addEventListener('DOMContentLoaded', function() {
             });
         });
     }
-    
+
     // Back to Top
     const backToTop = document.querySelector('.back-to-top');
     if (backToTop) {
@@ -47,12 +47,12 @@ document.addEventListener('DOMContentLoaded', function() {
                 backToTop.classList.remove('visible');
             }
         });
-        
+
         backToTop.addEventListener('click', function() {
             window.scrollTo({ top: 0, behavior: 'smooth' });
         });
     }
-    
+
     // Scroll Animations
     const animateElements = document.querySelectorAll('.animate-on-scroll');
     const observer = new IntersectionObserver(function(entries) {
@@ -62,13 +62,13 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
-    
+
     animateElements.forEach(function(el) { observer.observe(el); });
-    
+
     // Animated Counters
     const counters = document.querySelectorAll('.counter-number');
     let countersAnimated = false;
-    
+
     const counterObserver = new IntersectionObserver(function(entries) {
         entries.forEach(function(entry) {
             if (entry.isIntersecting && !countersAnimated) {
@@ -77,23 +77,23 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     }, { threshold: 0.5 });
-    
+
     if (counters.length > 0) {
         counterObserver.observe(counters[0].closest('.counter-grid') || counters[0]);
     }
-    
+
     function animateCounters() {
         counters.forEach(function(counter) {
             const target = counter.getAttribute('data-target');
             const suffix = counter.getAttribute('data-suffix') || '';
             const isNumber = !isNaN(parseInt(target));
-            
+
             if (isNumber) {
                 const targetNum = parseInt(target);
                 const duration = 2000;
                 const increment = targetNum / (duration / 16);
                 let current = 0;
-                
+
                 const timer = setInterval(function() {
                     current += increment;
                     if (current >= targetNum) {
@@ -108,7 +108,7 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     }
-    
+
     // FAQ Accordion
     const faqItems = document.querySelectorAll('.faq-item');
     faqItems.forEach(function(item) {
@@ -123,7 +123,7 @@ document.addEventListener('DOMContentLoaded', function() {
             });
         }
     });
-    
+
     // Form Submission
     const forms = document.querySelectorAll('form');
     forms.forEach(function(form) {
@@ -131,14 +131,14 @@ document.addEventListener('DOMContentLoaded', function() {
             e.preventDefault();
             const submitBtn = form.querySelector('button[type="submit"]');
             const originalText = submitBtn.innerHTML;
-            
+
             submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
             submitBtn.disabled = true;
-            
+
             setTimeout(function() {
                 submitBtn.innerHTML = '<i class="fas fa-check"></i> Message Sent!';
                 submitBtn.style.background = 'var(--success)';
-                
+
                 setTimeout(function() {
                     form.reset();
                     submitBtn.innerHTML = originalText;
@@ -148,6 +148,6 @@ document.addEventListener('DOMContentLoaded', function() {
             }, 1500);
         });
     });
-    
+
     console.log('Vortexedge Technology - Site loaded successfully');
 });
