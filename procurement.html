@@ -6,7 +6,7 @@
     <title>Procurement Services | Vortexedge</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Sora:wght@400;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
@@ -14,7 +14,7 @@
 
 <nav class="navbar">
     <div class="nav-container">
-        <a href="index.html" class="nav-logo">Vortexedge</a>
+        <a href="index.html" class="nav-logo"><img src="assets/images/logo.png" alt="Vortexedge"> Vortexedge</a>
         <ul class="nav-links">
             <li><a href="index.html">Home</a></li>
             <li><a href="technology.html">Technology</a></li>
@@ -26,76 +26,77 @@
     </div>
 </nav>
 
-<section class="hero" style="min-height: 70vh; background: linear-gradient(135deg, #1e3a8a 0%, #7c3aed 50%, #06b6d4 100%);">
+<section class="hero-photo" style="background-image: url('assets/images/hero-procurement.jpg');">
     <div class="hero-content">
-        <span class="section-tag">Procurement Services</span>
-        <h1>Strategic Procurement Solutions</h1>
-        <p>End-to-end procurement services that save you time, money, and headaches.</p>
+        <span class="eyebrow on-dark">📦 Procurement Services</span>
+        <h1>Sourcing Handled. Supply Chains Secured.</h1>
+        <p>From global vendor sourcing to final-mile delivery, we manage procurement end-to-end so you never chase a shipment or a supplier again.</p>
         <div class="hero-buttons">
-            <a href="#services" class="btn btn-white"><i class="fas fa-briefcase"></i> Our Services</a>
-            <a href="https://wa.me/2347048069238" class="btn btn-outline-white" target="_blank"><i class="fas fa-phone"></i> Get Quote</a>
+            <a href="#solutions" class="btn btn-white"><i class="fas fa-boxes-stacked"></i> View Services</a>
+            <a href="index.html#contact" class="btn btn-outline-white"><i class="fas fa-phone"></i> Request a Quote</a>
         </div>
     </div>
 </section>
 
-<section class="section section-dark">
+<section id="solutions" class="section section-light">
     <div class="container">
         <div class="section-header animate-on-scroll">
-            <span class="section-tag" style="background: linear-gradient(135deg, #60a5fa 0%, #c084fc 100%);">Why Us</span>
-            <h2 style="color: white;">The Vortexedge Advantage</h2>
-        </div>
-        <div class="counter-grid">
-            <div class="counter-item animate-on-scroll"><div class="counter-number" data-target="30" data-suffix="%">0%</div><div class="counter-label">Cost Savings</div></div>
-            <div class="counter-item animate-on-scroll"><div class="counter-number" data-target="200" data-suffix="+">0+</div><div class="counter-label">Vetted Suppliers</div></div>
-            <div class="counter-item animate-on-scroll"><div class="counter-number" data-target="95" data-suffix="%">0%</div><div class="counter-label">On-time Delivery</div></div>
-            <div class="counter-item animate-on-scroll"><div class="counter-number" data-target="10" data-suffix="+">0+</div><div class="counter-label">Years Experience</div></div>
-        </div>
-    </div>
-</section>
-
-<section id="services" class="section section-light">
-    <div class="container">
-        <div class="section-header animate-on-scroll">
-            <span class="section-tag">Our Services</span>
-            <h2>Complete Procurement Solutions</h2>
-            <p>From sourcing to delivery, we manage the entire procurement lifecycle.</p>
+            <span class="section-tag">What We Handle</span>
+            <h2>Full-Cycle Procurement</h2>
+            <p>Every step of the sourcing and supply chain, managed under one roof.</p>
         </div>
         <div class="grid grid-3">
-            <div class="card animate-on-scroll">
-                <div class="card-icon"><i class="fas fa-search"></i></div>
-                <h3>Strategic Sourcing</h3>
-                <p>We identify and qualify the best suppliers for your needs.</p>
-                <ul class="solution-features" style="margin-top: 1rem;"><li>Supplier Discovery</li><li>Qualification</li><li>Negotiation</li><li>Contract Management</li></ul>
+            <div class="card animate-on-scroll" style="position: relative;">
+                <span class="badge-popular">Sourcing</span>
+                <div class="card-icon"><i class="fas fa-globe"></i></div>
+                <h3>Global Vendor Sourcing</h3>
+                <p>We identify, vet, and negotiate with verified suppliers across local and international markets.</p>
+                <ul class="solution-features" style="margin-top: 1.5rem;">
+                    <li>Verified Supplier Network</li>
+                    <li>Competitive Bidding</li>
+                    <li>Contract Negotiation</li>
+                    <li>Quality Assurance</li>
+                    <li>Price Benchmarking</li>
+                </ul>
+                <a href="index.html#contact" class="btn btn-primary" style="width: 100%; margin-top: 1.5rem;">
+                    Start Sourcing <i class="fas fa-arrow-right"></i>
+                </a>
             </div>
-            <div class="card animate-on-scroll">
-                <div class="card-icon"><i class="fas fa-truck"></i></div>
-                <h3>Supply Chain Management</h3>
-                <p>End-to-end supply chain visibility and control.</p>
-                <ul class="solution-features" style="margin-top: 1rem;"><li>Logistics</li><li>Quality Control</li><li>Inventory Management</li><li>Risk Mitigation</li></ul>
+
+            <div class="card animate-on-scroll" style="position: relative;">
+                <span class="badge-popular" style="background: var(--success);">Most Requested</span>
+                <div class="card-icon"><i class="fas fa-truck-fast"></i></div>
+                <h3>Logistics & Freight Management</h3>
+                <p>End-to-end shipment tracking from port to warehouse, with full documentation and customs handling.</p>
+                <ul class="solution-features" style="margin-top: 1.5rem;">
+                    <li>Freight Forwarding</li>
+                    <li>Customs Clearance</li>
+                    <li>Real-Time Tracking</li>
+                    <li>Warehouse Coordination</li>
+                    <li>Bill of Lading Management</li>
+                    <li>Last-Mile Delivery</li>
+                </ul>
+                <a href="index.html#contact" class="btn btn-primary" style="width: 100%; margin-top: 1.5rem;">
+                    Get a Quote <i class="fas fa-arrow-right"></i>
+                </a>
             </div>
-            <div class="card animate-on-scroll">
-                <div class="card-icon"><i class="fas fa-file-invoice-dollar"></i></div>
-                <h3>Procurement Consulting</h3>
-                <p>Expert advice on procurement strategy and optimization.</p>
-                <ul class="solution-features" style="margin-top: 1rem;"><li>Process Audit</li><li>Strategy Development</li><li>Policy Design</li><li>Training</li></ul>
-            </div>
-            <div class="card animate-on-scroll">
-                <div class="card-icon"><i class="fas fa-handshake"></i></div>
-                <h3>Vendor Management</h3>
-                <p>Build and maintain strong supplier relationships.</p>
-                <ul class="solution-features" style="margin-top: 1rem;"><li>Performance Reviews</li><li>Relationship Building</li><li>Contract Renewals</li><li>Dispute Resolution</li></ul>
-            </div>
-            <div class="card animate-on-scroll">
-                <div class="card-icon"><i class="fas fa-laptop"></i></div>
-                <h3>E-Procurement</h3>
-                <p>Digital procurement solutions that streamline buying.</p>
-                <ul class="solution-features" style="margin-top: 1rem;"><li>Online Catalogs</li><li>Approval Workflows</li><li>Digital PO</li><li>Analytics</li></ul>
-            </div>
-            <div class="card animate-on-scroll">
-                <div class="card-icon"><i class="fas fa-globe-africa"></i></div>
-                <h3>International Sourcing</h3>
-                <p>Access global suppliers with our expertise.</p>
-                <ul class="solution-features" style="margin-top: 1rem;"><li>Global Suppliers</li><li>Import/Export</li><li>Customs Clearance</li><li>Shipping</li></ul>
+
+            <div class="card animate-on-scroll" style="position: relative;">
+                <span class="badge-popular" style="background: var(--secondary);">Compliance</span>
+                <div class="card-icon"><i class="fas fa-file-signature"></i></div>
+                <h3>Purchase & Vendor Management</h3>
+                <p>Structured purchase order tracking and vendor application review, built for accountability.</p>
+                <ul class="solution-features" style="margin-top: 1.5rem;">
+                    <li>Purchase Order Tracking</li>
+                    <li>Vendor Applications</li>
+                    <li>Milestone Reporting</li>
+                    <li>Audit-Ready Documentation</li>
+                    <li>Spend Analytics</li>
+                    <li>Risk Assessment</li>
+                </ul>
+                <a href="index.html#contact" class="btn btn-primary" style="width: 100%; margin-top: 1.5rem;">
+                    Talk to Us <i class="fas fa-arrow-right"></i>
+                </a>
             </div>
         </div>
     </div>
@@ -104,18 +105,29 @@
 <section class="section section-white">
     <div class="container">
         <div class="section-header animate-on-scroll">
-            <span class="section-tag">Industries</span>
-            <h2>Serving Multiple Sectors</h2>
+            <span class="section-tag">Our Approach</span>
+            <h2>Built for Nigerian Supply Chains</h2>
         </div>
         <div class="grid grid-4">
-            <div class="card animate-on-scroll" style="text-align: center;"><div class="card-icon" style="margin: 0 auto 1.5rem;"><i class="fas fa-school"></i></div><h4>Education</h4><p>School supplies, furniture, equipment.</p></div>
-            <div class="card animate-on-scroll" style="text-align: center;"><div class="card-icon" style="margin: 0 auto 1.5rem;"><i class="fas fa-hospital"></i></div><h4>Healthcare</h4><p>Medical equipment, supplies.</p></div>
-            <div class="card animate-on-scroll" style="text-align: center;"><div class="card-icon" style="margin: 0 auto 1.5rem;"><i class="fas fa-industry"></i></div><h4>Manufacturing</h4><p>Raw materials, machinery.</p></div>
-            <div class="card animate-on-scroll" style="text-align: center;"><div class="card-icon" style="margin: 0 auto 1.5rem;"><i class="fas fa-building"></i></div><h4>Construction</h4><p>Building materials, equipment.</p></div>
-            <div class="card animate-on-scroll" style="text-align: center;"><div class="card-icon" style="margin: 0 auto 1.5rem;"><i class="fas fa-utensils"></i></div><h4>Hospitality</h4><p>Food, equipment, linens.</p></div>
-            <div class="card animate-on-scroll" style="text-align: center;"><div class="card-icon" style="margin: 0 auto 1.5rem;"><i class="fas fa-store"></i></div><h4>Retail</h4><p>Merchandise, packaging.</p></div>
-            <div class="card animate-on-scroll" style="text-align: center;"><div class="card-icon" style="margin: 0 auto 1.5rem;"><i class="fas fa-city"></i></div><h4>Government</h4><p>Public sector procurement.</p></div>
-            <div class="card animate-on-scroll" style="text-align: center;"><div class="card-icon" style="margin: 0 auto 1.5rem;"><i class="fas fa-users"></i></div><h4>NGOs</h4><p>Program supplies, logistics.</p></div>
+            <div class="card animate-on-scroll" style="text-align: center;"><div class="card-icon" style="margin: 0 auto 1.5rem;"><i class="fas fa-ship"></i></div><h4>Port to Warehouse</h4><p>We track every leg of the journey.</p></div>
+            <div class="card animate-on-scroll" style="text-align: center;"><div class="card-icon" style="margin: 0 auto 1.5rem;"><i class="fas fa-clipboard-list"></i></div><h4>Milestone Tracking</h4><p>Know exactly where every order stands.</p></div>
+            <div class="card animate-on-scroll" style="text-align: center;"><div class="card-icon" style="margin: 0 auto 1.5rem;"><i class="fas fa-handshake"></i></div><h4>Vetted Vendors</h4><p>Every supplier checked before onboarding.</p></div>
+            <div class="card animate-on-scroll" style="text-align: center;"><div class="card-icon" style="margin: 0 auto 1.5rem;"><i class="fas fa-shield-alt"></i></div><h4>Contract Security</h4><p>Terms protected, documentation on file.</p></div>
+        </div>
+    </div>
+</section>
+
+<section class="section section-dark">
+    <div class="container">
+        <div class="section-header animate-on-scroll">
+            <span class="section-tag" style="background: linear-gradient(135deg, #60a5fa 0%, #c084fc 100%);">Our Process</span>
+            <h2 style="color: white;">How We Work</h2>
+        </div>
+        <div class="grid grid-4">
+            <div class="card-glass card animate-on-scroll" style="text-align: center;"><div style="width: 60px; height: 60px; background: white; color: var(--primary); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; font-weight: 800; margin: 0 auto 1.5rem;">1</div><h4 style="color: white;">Source</h4><p>Identify and vet the right suppliers for your order.</p></div>
+            <div class="card-glass card animate-on-scroll" style="text-align: center;"><div style="width: 60px; height: 60px; background: white; color: var(--primary); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; font-weight: 800; margin: 0 auto 1.5rem;">2</div><h4 style="color: white;">Negotiate</h4><p>Secure the best price and contract terms.</p></div>
+            <div class="card-glass card animate-on-scroll" style="text-align: center;"><div style="width: 60px; height: 60px; background: white; color: var(--primary); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; font-weight: 800; margin: 0 auto 1.5rem;">3</div><h4 style="color: white;">Ship</h4><p>Manage freight, customs, and delivery.</p></div>
+            <div class="card-glass card animate-on-scroll" style="text-align: center;"><div style="width: 60px; height: 60px; background: white; color: var(--primary); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; font-weight: 800; margin: 0 auto 1.5rem;">4</div><h4 style="color: white;">Deliver</h4><p>Confirm receipt and reconcile the order.</p></div>
         </div>
     </div>
 </section>
@@ -124,8 +136,8 @@
     <div class="container">
         <div class="section-header animate-on-scroll">
             <span class="section-tag" style="background: white; color: var(--primary);">Get Started</span>
-            <h2 style="color: white;">Ready to Optimize Your Procurement?</h2>
-            <p>Contact us today for a free consultation and quote.</p>
+            <h2 style="color: white;">Ready to Simplify Your Supply Chain?</h2>
+            <p>Contact us today for a free consultation.</p>
         </div>
         <div style="text-align: center;" class="animate-on-scroll">
             <a href="https://wa.me/2347048069238" class="btn btn-white" target="_blank" style="margin-right: 1rem;"><i class="fab fa-whatsapp"></i> WhatsApp Us</a>
@@ -136,8 +148,8 @@
 
 <footer class="footer">
     <div class="footer-grid">
-        <div><h3>Vortexedge</h3><p style="color: rgba(255,255,255,0.7);">Strategic procurement solutions.</p></div>
-        <div><h3>Services</h3><ul class="footer-links"><li><a href="#services">Strategic Sourcing</a></li><li><a href="#services">Supply Chain</a></li><li><a href="#services">Consulting</a></li><li><a href="#services">Vendor Management</a></li></ul></div>
+        <div><h3><img src="assets/images/logo.png" alt="Vortexedge"> Vortexedge</h3><p style="color: rgba(255,255,255,0.7);">Transforming businesses through technology.</p></div>
+        <div><h3>Quick Links</h3><ul class="footer-links"><li><a href="index.html">Home</a></li><li><a href="school-digital-transformation.html">School System</a></li><li><a href="https://kennygreat.github.io/assessment2/">Digital Assessment</a></li><li><a href="https://databulge.com/landing.html">DataBulge</a></li></ul></div>
         <div><h3>Other Services</h3><ul class="footer-links"><li><a href="technology.html">Technology</a></li><li><a href="real-estate.html">Real Estate</a></li></ul></div>
         <div><h3>Contact</h3><ul class="footer-links"><li>57 Kunai Street, Kaduna</li><li>+234 704 806 9238</li><li>vortexedgelimited@gmail.com</li></ul></div>
     </div>
