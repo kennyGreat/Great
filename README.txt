@@ -1,6 +1,6 @@
-# Vortexedge Technology Website
+# Vortexedge Limited Website
 
-The official multi-page website for **Vortexedge Technology Limited** — covering our three core divisions: Digital Transformation & Technology, Procurement, and Real Estate.
+The official multi-page website for **Vortexedge Limited** — covering our three core divisions: Digital Transformation & Technology, Procurement, and Real Estate.
 
 🌐 Live site: [www.vortexedge.com.ng](https://www.vortexedge.com.ng)
 
